@@ -1,0 +1,50 @@
+
+
+hand class:{
+    initialize/declare variables:
+    public integer numberCards
+    public String [] handContent = handContent with length 20
+    public integer [] cardValues = cardValues with length 10
+
+    General contructor:
+    parameters: integer numberCards, string handContent
+    returns: None
+        1. this numberCards = numberCards
+        2. this handContent = handContent
+
+
+    total method:
+    parameters: handContent array
+    Return: total value of hand
+        1. for each index of the array
+            a. for each index at that index
+                i. add each value at handContent index 0 a variable sum
+        2. return the integer sum
+
+    display method:
+    parameters: string handContent
+    return: none
+        1. Output handContent
+
+    add method:
+    parameters: handContent [], integer value i,integer hand values sum
+    return: string array handContent
+        1. String [] newCard = newCard length 2
+        2. random number = random generated number between 0 and 7
+        3. if the random number is between 0 and 3
+            a. add a random letter (H,D,S,C) to newCard index 1
+        4. otherwise if the random number is between 4 and 6
+            a. add a random letter (J,K,Q) to newCard index 0
+            b. add "10" to newCard index 0
+            c. add a random letter (H,D,S,C) to newCard index 1
+        5. otherwise if the random number == 7
+            a. add "A" to newCard index 1
+            b. if handValuesSum < 11
+                i. add "11" to newCard index 0
+            c. otherwise
+                i. add "1" to newCard index 0
+        6. handContent [i] = newCard
+        7. return handContent
+
+
+} // hand class end

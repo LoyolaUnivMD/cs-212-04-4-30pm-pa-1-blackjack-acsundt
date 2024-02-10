@@ -1,0 +1,6 @@
+Input:    Return Value:
+6H         6
+7S JC      17
+8H AD KH   19
+AH AD 5S   17
+AD         11
